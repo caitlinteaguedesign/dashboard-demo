@@ -1,0 +1,48 @@
+$theme-name: 'default';
+
+$positive: #51dba1;
+$negative: #ec4149;
+
+$link: #53c7ff;
+$link-hover: #42b7f1;
+
+$key-text: #f4fcff; // important values, highlights
+$support-text: #abc6d4; // section labels
+
+$background: url("../../images/wallpaper/dark_mosaic.png") repeat #333333; // Dark Mosaic by John Burks
+$h1: #5e91a8;
+$h2: #859eac;
+$p: #98abb4;
+
+$button-bg: linear-gradient(to bottom, #a4f1ff, #87deee 15%, #84d7e6 75%, #58a2af), #79cbda;
+$button-color: #15363b;
+$button-border: #35646d;
+
+$module-bg: #1e2224;
+$module-border: #363e42; // also includes timestamp background-color, bar chart borders / header bg
+$subtle-icon: #535c61; // exmark in modals, grabber icon
+
+$divider-bg: #11171a;
+$divider-border:  #2e3a3f;
+
+$modal-backdrop: rgba(12, 14, 15, 0.9);
+
+$action-fill: #e5f1f7;
+$action-border: #0d3b52;
+$action-bg: linear-gradient(to bottom, #56b7e7, #1c6081) #1c6081;
+
+$dragging-color: rgba(93, 193, 240, 0.2);
+
+$barchart-header-color: #869096;
+
+$barchart-body-bg: linear-gradient(to top, #2c3b41, #545c5f 40px, #212f35 41px, #545c5f 41px, #2c3b41 92%, #1f2c31) #0e5e6f;
+
+$barchart-bar-border: #357487;
+$barchart-bar-bg: #63a9be;
+
+$barchart-value-color:#173c47;
+$barchart-value-bg: #85c7db;
+
+$barchart-element-bg: linear-gradient(to top, #255361, #296b80 23px, #174350 24px, #296b80 24px, #85c7db) #85c7db;
+
+@import 'basis';

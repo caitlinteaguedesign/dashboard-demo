@@ -1,0 +1,21 @@
+html, body {
+	font-family: $quicksand;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	padding: 2em;
+	max-width: 75em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.module-area {
+	margin-top: 1em;
+
+	display: grid;
+	align-items: start;
+	grid-template-columns: repeat(auto-fit, minmax(17.375em, 1fr));
+	grid-gap: .5em;
+}

@@ -1,0 +1,50 @@
+// ===========================
+// TYPOGRAPHY
+
+$google-fonts: "Quicksand:400,700|Rajdhani:400,700";
+
+@include google-font($google-fonts);
+
+$rajd: 'Rajdhani', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+
+h1 {
+	font-family: $rajd;
+	font-size: 2.5em;
+	font-weight: 700;
+	line-height: 1.1em;
+}
+h2 {
+	font-family: $rajd;
+	font-size: 1em;
+}
+p {
+	font-family: $quicksand;
+	font-size: .9em;
+	line-height: 1.5em;
+}
+
+.value {
+	font-size: 1.25em;
+	font-weight: 700;
+	line-height: 1em;
+
+	.subtext {
+		font-size: .75em;
+		font-weight: 400;
+	}
+}
+
+.text-link {
+	display: inline-block;
+	margin-bottom: .25em;
+	font-size: .9em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+	
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

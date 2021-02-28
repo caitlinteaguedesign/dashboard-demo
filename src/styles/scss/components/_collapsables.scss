@@ -1,0 +1,29 @@
+.collapsable_parent {
+	margin-top: .5em;
+}
+
+.collapsable_content {
+	overflow: hidden;
+	transition: height 290ms cubic-bezier(0.4, 0, 0.2, 1), padding 145ms;
+	height: auto;
+	padding-top: .5em;
+
+	&.collapsed {
+		height: 0;
+		padding: 0;
+	}
+}
+
+.collapsable_trigger {
+	width: 100%;
+	cursor: pointer;
+	border: none;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid rgba(0,0,0,.6);
+	@include gradients(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.2), rgba(0,0,0,.4));
+	color: rgba(255,255,255,.4);
+	font-size: .8em;
+	line-height: 1.5em;
+	padding: .25em;
+	border-radius: 1em;
+}

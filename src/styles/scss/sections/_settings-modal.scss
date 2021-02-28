@@ -1,0 +1,9 @@
+.settings-actions {
+	padding: .5em;
+	display: flex;
+	justify-content: flex-end;
+
+	button:not(:last-child) {
+		margin-right: .5em;
+	}
+}

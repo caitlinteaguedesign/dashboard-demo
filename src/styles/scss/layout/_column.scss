@@ -1,0 +1,15 @@
+// ===========================
+// COLUMN
+
+.col-container {
+	display: flex;
+	flex-direction: column;
+
+	.module-list {
+		transition: background-color 0.2s ease;
+		flex-grow: 1;
+		min-height: 18em;
+		border-radius: .5em;
+		padding: .5em;
+	}
+}

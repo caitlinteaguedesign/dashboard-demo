@@ -1,0 +1,17 @@
+@mixin imageNgradient($image, $position, $direction, $fallback, $color-stops...) {
+	background: $fallback;
+	background: url($image) $position no-repeat, -moz-linear-gradient($direction, $color-stops);
+	background: url($image) $position no-repeat, -webkit-linear-gradient($direction, $color-stops);
+   background: url($image) $position no-repeat, -o-linear-gradient($direction, $color-stops);
+	background: url($image) $position no-repeat, -ms-linear-gradient($direction, $color-stops);
+	background: url($image) $position no-repeat, linear-gradient($direction, $color-stops);
+}
+
+@mixin gradients($direction, $fallback, $color-stops...) {
+	background: $fallback;
+	background: -moz-linear-gradient($direction, $color-stops);
+	background: -webkit-linear-gradient($direction, $color-stops);
+   background: -o-linear-gradient($direction, $color-stops);
+	background: -ms-linear-gradient($direction, $color-stops);
+	background: linear-gradient($direction, $color-stops);
+}

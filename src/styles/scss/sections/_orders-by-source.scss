@@ -1,0 +1,15 @@
+.grid-table {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-gap: 1em .75em;
+	align-items: center;
+
+	.row-label {
+		text-transform: uppercase;
+		font-size: .9em;
+	}
+
+	.value {
+		text-align: right;
+	}
+}

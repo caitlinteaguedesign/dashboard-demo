@@ -1,0 +1,33 @@
+.section{
+	&:not(:last-child){
+		margin-bottom: 1.5em;
+	}
+
+	.section-label {
+		display: flex;
+		align-items: center;
+		margin-bottom: .5em;
+
+		text-transform: uppercase;
+		font-size: .9em;
+
+		a {
+			font-size: 1em;
+			margin-left: .375em;
+			width: .875em;
+			height: .875em;
+			
+			svg {
+				display: block;
+			}
+			span {
+				position: absolute;
+				left: -99999px;
+			}
+		}
+
+		button {
+			margin-left: .375em;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+$theme-name: 'evening-sky';
+
+$positive: #73e75b;
+$negative: #ec473b;
+
+$link: #a7bae7;
+$link-hover: #94a5ce;
+
+$key-text: #ffebe6; // important values, highlights
+$support-text: #fabeaf; // section labels
+
+$background: url("../../images/wallpaper/ingmar-unsplash.jpg") center/cover no-repeat #333333; // Moon, sky by Ingmar via Unsplash
+$h1: #f78d72;
+$h2: #c48592;
+$p: #e7b4be;
+
+$button-bg: linear-gradient(to bottom, #bec9e4, #8fa1ca 15%, #8fa1ca 75%, #5f729c), #8fa1ca;
+$button-color: #1d2946;
+$button-border: #1a253d;
+
+$module-bg: #422027;
+$module-border: #2b1116; // also includes timestamp background-color, bar chart borders / header bg
+$subtle-icon: #774952; // exmark in modals, grabber icon
+
+$divider-bg: #35171c;
+$divider-border:  #61343e;
+
+$modal-backdrop: rgba(15, 10, 13, 0.9);
+
+$action-fill: #552013;
+$action-border: #9e4934;
+$action-bg: linear-gradient(to bottom, #ffc9bb, #ca7762), #f78d72;
+
+$dragging-color: rgba(24, 34, 56, 0.5);
+
+$barchart-header-color: #ce9ca8;
+
+$barchart-body-bg: linear-gradient(to top, #6c789b, #525f81 40px, #212f35 41px, #525f81 41px, #39445f 92%, #171e2e) #39445f;
+
+$barchart-bar-border: #b96651;
+$barchart-bar-bg: #ffaf9b;
+
+$barchart-value-color:#6d3324;
+$barchart-value-bg: #ffaf9b;
+
+$barchart-element-bg: linear-gradient(to top, #d36448, #f78d72 23px, #7e311e 24px, #f78d72 24px, #ffaf9b) #ffaf9b;
+
+@import 'basis';
