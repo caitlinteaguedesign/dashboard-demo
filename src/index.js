@@ -8,5 +8,3 @@ import {Toolbar} from './components/Toolbar';
 import './styles/css/styles.css?v=06';
 
 ReactDOM.render(<Toolbar />, document.getElementById('root'));
-
-// test update
