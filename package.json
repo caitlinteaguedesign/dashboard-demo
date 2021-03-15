@@ -35,7 +35,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://dashboard-demo-ysp6p.ondigitalocean.app/",
+  "homepage": "https://localhost:3000/archive/dashboard/",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "repository": {
