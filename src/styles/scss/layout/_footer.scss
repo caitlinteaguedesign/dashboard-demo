@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 225px;
+  padding: 2.5rem 1rem 3.5rem;
+  display: grid;
+  grid-gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-size: 1.125rem;
+  text-align: center;
+
+  &__link {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}
