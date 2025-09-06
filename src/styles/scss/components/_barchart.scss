@@ -1,61 +1,59 @@
 .bar-chart {
-	width: 100%;
-	margin-bottom: 1em;
+  width: 100%;
+  margin-bottom: 1em;
 
-	.chart-header {
-		font-family: $quicksand;
-		font-size: .8em;
-		font-weight: 700;
-		line-height: 1em;
-		
-		padding: .375em .5em;
-			
-	}
+  .chart-header {
+    font-family: $quicksand;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1em;
 
-	.chart-body {
-		overflow-y: hidden;
-		overflow-x: scroll;
-		padding: .5em .25em 0;
-		height: 13.125em;
-		border: 1px solid;
-		
-		display: flex;
-		align-items: flex-end;
+    padding: 0.375em 0.5em;
+  }
 
-		.bar {
-			position: relative;
-			min-width: 1.75em;
-			margin: 0 .25em;
-			border: 1px solid;
-			border-bottom: none;
-			text-align: center;
+  .chart-body {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 0.5em 0.25em 0;
+    height: 13.125em;
+    border: 1px solid;
 
-			&:last-child:after{
-				content: "";
-				display: block;
-				right: -.5em;
-				width: .5em;
-				height: 1px;
-				position: absolute;
-			}
-			
-			.bar-value {
-				font-size: .9em;
-				min-height: 1.25em;
-				padding: .25em 0;
-			}
-			
-			.bar-element{
+    display: flex;
+    align-items: flex-end;
 
-				$i: 0;
+    .bar {
+      position: relative;
+      min-width: 1.75em;
+      margin: 0 0.25em;
+      border: 1px solid;
+      border-bottom: none;
+      text-align: center;
 
-				@while $i <= 100 {
-					&.height-#{$i}{
-						height: $i * .1em;
-					}
-					$i: $i +1;
-				}
-			}	
-		}
-	}
+      &:last-child:after {
+        content: "";
+        display: block;
+        right: -0.5em;
+        width: 0.5em;
+        height: 1px;
+        position: absolute;
+      }
+
+      .bar-value {
+        font-size: 0.9em;
+        min-height: 1.25em;
+        padding: 0.25em 0;
+      }
+
+      .bar-element {
+        $i: 0;
+
+        @while $i <= 100 {
+          &.height-#{$i} {
+            height: $i * 0.1em;
+          }
+          $i: $i + 1;
+        }
+      }
+    }
+  }
 }
