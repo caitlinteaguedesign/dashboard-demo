@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 // the app
-import {Toolbar} from './components/Toolbar';
+import { Toolbar } from "./components/Toolbar";
 
 // styles
-import './styles/css/styles.css?v=06';
+import "./styles/styles.scss";
 
-ReactDOM.render(<Toolbar />, document.getElementById('root'));
+ReactDOM.render(<Toolbar />, document.getElementById("root"));
