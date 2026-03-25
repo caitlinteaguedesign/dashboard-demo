@@ -48,5 +48,8 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/caitlinteaguedesign/dashboard-demo/issues"
+  },
+  "devDependencies": {
+    "sass": "^1.98.0"
   }
 }
