@@ -1,5 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 // the app
 import { Toolbar } from "./components/Toolbar";
@@ -7,4 +6,7 @@ import { Toolbar } from "./components/Toolbar";
 // styles
 import "./styles/styles.scss";
 
-ReactDOM.render(<Toolbar />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container);
+
+root.render(<Toolbar />);
