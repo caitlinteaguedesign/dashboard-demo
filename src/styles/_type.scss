@@ -31,12 +31,17 @@ p {
   }
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 .text-link {
   display: inline-block;
-  margin-bottom: 0.25em;
   font-size: 0.9em;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 2px 0;
 }
 
 .truncate {

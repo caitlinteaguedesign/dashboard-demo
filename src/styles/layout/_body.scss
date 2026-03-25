@@ -4,16 +4,22 @@ body {
 }
 
 .container {
-  width: 100%;
   min-height: 100vh;
-  padding: 2em 2em 225px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  width: 100%;
+  padding: 2rem;
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
 }
 
 .module-area {
-  margin-top: 1em;
+  margin: 1rem 0;
 
   display: grid;
   align-items: start;

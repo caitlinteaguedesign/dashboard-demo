@@ -45,7 +45,7 @@ export class Toolbar extends React.Component {
     // replace default data with preferences, if the cookies exist
     this.setState(
       getPreferences(this.state),
-      this.switchTheme(this.state.theme)
+      this.switchTheme(this.state.theme),
     );
   }
 
@@ -56,7 +56,7 @@ export class Toolbar extends React.Component {
       {
         minimized: !this.state.minimized,
       },
-      () => setModules(this.state.minimized)
+      () => setModules(this.state.minimized),
     );
   }
 
@@ -71,7 +71,7 @@ export class Toolbar extends React.Component {
       () => {
         setModules(this.state.minimized);
         this.saveSettings();
-      }
+      },
     );
   }
 
@@ -112,7 +112,7 @@ export class Toolbar extends React.Component {
       () => {
         document.body.className = "";
         document.body.classList.add(this.state.activeTheme);
-      }
+      },
     );
   }
 
@@ -165,11 +165,11 @@ export class Toolbar extends React.Component {
     for (var column in this.state.columns) {
       const thisColumn = this.state.columns[column];
       const modules = thisColumn.moduleIDs.map(
-        (moduleID) => this.state.modules[moduleID]
+        (moduleID) => this.state.modules[moduleID],
       );
 
       columnList.push(
-        <Column key={thisColumn.id} column={thisColumn} modules={modules} />
+        <Column key={thisColumn.id} column={thisColumn} modules={modules} />,
       );
     }
 
@@ -189,21 +189,21 @@ export class Toolbar extends React.Component {
             saveSettings={(e) => this.saveSettings(e)}
           />
         </Modal>
+        <main className="main">
+          <Header
+            openSettings={(e) => this.toggleModal("settingsModal")}
+            saveSettings={(e) => this.saveSettings(e)}
+            minimized={this.state.minimized}
+            minimizeModules={(e) => this.toggleMinimizeModules(e)}
+          />
 
-        <Header
-          openSettings={(e) => this.toggleModal("settingsModal")}
-          saveSettings={(e) => this.saveSettings(e)}
-          minimized={this.state.minimized}
-          minimizeModules={(e) => this.toggleMinimizeModules(e)}
-        />
-
-        <DragDrop
-          positions={this.state.columns}
-          update={(e) => this.updateDragDrop(e)}
-        >
-          <div className="module-area">{columnList}</div>
-        </DragDrop>
-
+          <DragDrop
+            positions={this.state.columns}
+            update={(e) => this.updateDragDrop(e)}
+          >
+            <div className="module-area">{columnList}</div>
+          </DragDrop>
+        </main>
         <Footer />
       </div>
     );
