@@ -2,13 +2,14 @@ export function Footer() {
   const date = new Date().getFullYear();
 
   return (
-    <footer class="footer">
+    <footer className="footer">
       <p>©{date} Caitlin Teague Doerr</p>
       <p>
-        To contact owner/developer, send an email to{" "}
+        To contact owner/developer,{" "}
         <a href="mailto:design@caitlinteague.com" className="footer__link">
-          design@caitlinteague.com
-        </a>
+          send an email
+        </a>{" "}
+        to <span className="text-bold">design@caitlinteague.com</span>
       </p>
       <p>
         <a href="//caitlinteague.com/builds" className="footer__link">
