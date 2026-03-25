@@ -5,7 +5,7 @@
 @import "reset";
 
 // mixins
-@import "mixins/bootstrap";
+@import "mixins/index";
 
 // typography
 @import "type";
@@ -16,7 +16,7 @@
 @import "themes/evening-sky";
 
 // components
-@import "components/bootstrap";
+@import "components/index";
 
 // layout
 @import "layout/body";
