@@ -1,10 +1,9 @@
 // ====================================
 // THEME - BASIS
 
-
 // defaults
 
-$theme-name: 'default' !default;
+$theme-name: "default" !default;
 
 $positive: #51dba1 !default;
 $negative: #ec4149 !default;
@@ -15,12 +14,14 @@ $link-hover: #42b7f1 !default;
 $key-text: #f4fcff !default; // important values, highlights
 $support-text: #abc6d4 !default; // section labels
 
-$background: url("../../images/wallpaper/dark_mosaic.png") repeat #333333 !default; // Dark Mosaic by John Burks
+$background: url("../images/wallpaper/dark_mosaic.png") repeat #333333 !default; // Dark Mosaic by John Burks
 $h1: #5e91a8 !default;
 $h2: #859eac !default;
 $p: #98abb4 !default;
 
-$button-bg: linear-gradient(to bottom, #a4f1ff, #87deee 15%, #84d7e6 75%, #58a2af), #79cbda !default;
+$button-bg:
+  linear-gradient(to bottom, #a4f1ff, #87deee 15%, #84d7e6 75%, #58a2af),
+  #79cbda !default;
 $button-color: #15363b !default;
 $button-border: #35646d !default;
 
@@ -29,7 +30,7 @@ $module-border: #363e42 !default; // also includes timestamp background-color, b
 $subtle-icon: #535c61 !default; // exmark in modals, grabber icon
 
 $divider-bg: #11171a !default;
-$divider-border:  #2e3a3f !default;
+$divider-border: #2e3a3f !default;
 
 $modal-backdrop: rgba(12, 14, 15, 0.9) !default;
 
@@ -41,218 +42,230 @@ $dragging-color: rgba(93, 193, 240, 0.2) !default;
 
 $barchart-header-color: #869096 !default;
 
-$barchart-body-bg: linear-gradient(to top, #2c3b41, #545c5f 40px, #212f35 41px, #545c5f 41px, #2c3b41 92%, #1f2c31) #0e5e6f !default;
+$barchart-body-bg: linear-gradient(
+    to top,
+    #2c3b41,
+    #545c5f 40px,
+    #212f35 41px,
+    #545c5f 41px,
+    #2c3b41 92%,
+    #1f2c31
+  )
+  #0e5e6f !default;
 
 $barchart-bar-border: #357487 !default;
 $barchart-bar-bg: #63a9be !default;
 
-$barchart-value-color:#173c47 !default;
+$barchart-value-color: #173c47 !default;
 $barchart-value-bg: #85c7db !default;
 
-$barchart-element-bg: linear-gradient(to top, #255361, #296b80 23px, #174350 24px, #296b80 24px, #85c7db) #85c7db !default;
+$barchart-element-bg: linear-gradient(
+    to top,
+    #255361,
+    #296b80 23px,
+    #174350 24px,
+    #296b80 24px,
+    #85c7db
+  )
+  #85c7db !default;
 
 .#{$theme-name} {
+  // ------------------
+  // global
 
-	// ------------------
-	// global
+  // image snagged from freepik
 
-   // image snagged from freepik
+  background: $background;
 
-	background: $background;
+  h1 {
+    color: $h1;
+  }
 
-	h1 {
-		color: $h1;
-	}
+  h2 {
+    color: $h2;
+  }
 
-	h2 {
-		color: $h2;
-	}
+  p {
+    color: $p;
+  }
 
-	p {
-		color: $p;
-   }
-   
-   .button {
-		color: $button-color;
-		border-color: $button-border;
-		background: $button-bg;
-   }
+  .button {
+    color: $button-color;
+    border-color: $button-border;
+    background: $button-bg;
+  }
 
-	a {
-		color: $link;
-		fill: $link;
-		border-color: $link;
+  a {
+    color: $link;
+    fill: $link;
+    border-color: $link;
 
-		&:hover {
-			color: $link-hover;
-			fill: $link-hover;
-			border-color: $link-hover;
-		}
-	}
-   
-	.value {
-		color: $key-text;
+    &:hover {
+      color: $link-hover;
+      fill: $link-hover;
+      border-color: $link-hover;
+    }
+  }
 
-		&.positive {
-			color: $positive;
-		}
+  .value {
+    color: $key-text;
 
-		&.negative {
-			color: $negative;
-		}
+    &.positive {
+      color: $positive;
+    }
 
-		.subtext {
-			color: $support-text;
-		}
-	}
+    &.negative {
+      color: $negative;
+    }
 
-	// ------------------
-	// common elements
-	.divider {
-		background-color: $divider-bg;
-      border-bottom-color: $divider-border;
-	}
+    .subtext {
+      color: $support-text;
+    }
+  }
 
-	.modal-wrapper {
-		.backdrop {
-			background-color: $modal-backdrop;
-		}
-		.modal {
-			background-color: $module-bg;
-			border-color: $module-border;
+  // ------------------
+  // common elements
+  .divider {
+    background-color: $divider-bg;
+    border-bottom-color: $divider-border;
+  }
 
-			.modal-header {
-				.modal-closer {
-					fill: $subtle-icon;
-				}
-			}
-		}
-	}
+  .modal-wrapper {
+    .backdrop {
+      background-color: $modal-backdrop;
+    }
+    .modal {
+      background-color: $module-bg;
+      border-color: $module-border;
 
-	.an-option {
-		color: $key-text;
-	}
+      .modal-header {
+        .modal-closer {
+          fill: $subtle-icon;
+        }
+      }
+    }
+  }
 
-	// ------------------
-	// header
-	.header {
+  .an-option {
+    color: $key-text;
+  }
 
-		.actions {
-         .action {
-            border-color:  $action-border;	
-            fill: $action-fill;
-            background: $action-bg;
-         }
-		}
-	}
+  // ------------------
+  // header
+  .header {
+    .actions {
+      .action {
+        border-color: $action-border;
+        fill: $action-fill;
+        background: $action-bg;
+      }
+    }
+  }
 
-	// ------------------
-	// columns
-	.col-container {
-		.module-list.dragging {
-			background-color: $dragging-color;
-		}
-	}
-	
-	// ------------------
-	// modules
-	.module {
-		background-color: $module-bg;
-		border-color: $module-border;
+  // ------------------
+  // columns
+  .col-container {
+    .module-list.dragging {
+      background-color: $dragging-color;
+    }
+  }
 
-		.label {
-			.mover {
-				fill: $subtle-icon;
-			}
-		}
+  // ------------------
+  // modules
+  .module {
+    background-color: $module-bg;
+    border-color: $module-border;
 
-		.timestamp {
-			background-color: $module-border;
+    .label {
+      .mover {
+        fill: $subtle-icon;
+      }
+    }
 
-			p {
-				color: $support-text;
+    .timestamp {
+      background-color: $module-border;
 
-				span {
-					color: $key-text;
-				}
-			}
-		}
-	}
+      p {
+        color: $support-text;
 
-	// ------------------
-	// sections
-	.section{
+        span {
+          color: $key-text;
+        }
+      }
+    }
+  }
 
-		// section label
-		.section-label {
-			color: $support-text;
-		}
-	}
+  // ------------------
+  // sections
+  .section {
+    // section label
+    .section-label {
+      color: $support-text;
+    }
+  }
 
-	// ----------------------------
-	// values with optional icon
-	.value-n-optional-icon {
-		.alert {
-			fill: $negative;
-		}
-	}
-	
-	// ------------------
-	// ip with most page loads
-	.pageload-state {
+  // ----------------------------
+  // values with optional icon
+  .value-n-optional-icon {
+    .alert {
+      fill: $negative;
+    }
+  }
 
-		&.okay {
-			color: $positive;
-			fill: $positive;
-		}
+  // ------------------
+  // ip with most page loads
+  .pageload-state {
+    &.okay {
+      color: $positive;
+      fill: $positive;
+    }
 
-		&.warning {
-			color: $negative;
-			fill: $negative;
-		}
-	}
+    &.warning {
+      color: $negative;
+      fill: $negative;
+    }
+  }
 
-	// ----------------------------
-	// settings
-	.settings-actions {
-		background-color: $module-border;
-	}
-	
-	// ------------------
-   // bar chart
-	.bar-chart 
-	{
-		// chart header
-		.chart-header {
-			background-color: $module-border;
-			color: $barchart-header-color;
-		}
+  // ----------------------------
+  // settings
+  .settings-actions {
+    background-color: $module-border;
+  }
 
-		// chart body
-		.chart-body {
-			border-color: $module-border;
-			background: $barchart-body-bg;
+  // ------------------
+  // bar chart
+  .bar-chart {
+    // chart header
+    .chart-header {
+      background-color: $module-border;
+      color: $barchart-header-color;
+    }
 
-			// bars
-			.bar {
-				border-color: $barchart-bar-border;
-				background-color: $barchart-bar-bg;
+    // chart body
+    .chart-body {
+      border-color: $module-border;
+      background: $barchart-body-bg;
 
-				.bar-value {
-					color: $barchart-value-color;
-					background-color: $barchart-value-bg;	
-				}
+      // bars
+      .bar {
+        border-color: $barchart-bar-border;
+        background-color: $barchart-bar-bg;
 
-				.bar-element {
-					background: $barchart-element-bg;
-				}			
-			}
-		}
-	}
+        .bar-value {
+          color: $barchart-value-color;
+          background-color: $barchart-value-bg;
+        }
 
-	// --------------------------
-	// orders by source row label
-	.row-label {
-		color: $support-text;
-	}
+        .bar-element {
+          background: $barchart-element-bg;
+        }
+      }
+    }
+  }
+
+  // --------------------------
+  // orders by source row label
+  .row-label {
+    color: $support-text;
+  }
 }
