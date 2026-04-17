@@ -1,42 +1,46 @@
-import React from 'react';
+import React from "react";
 
 // images
-import { ReactComponent as Link } from '../../images/link.svg';
+import Link from "../../images/link.svg?react";
 
-export function Section(props)
-{
-	var link = "";
-	//var trigger = "";
-	let srcName;
+export function Section(props) {
+  var link = "";
+  //var trigger = "";
+  let srcName;
 
-	// if there is a source
-	if(props.source) {
+  // if there is a source
+  if (props.source) {
+    if (props.sourceName) {
+      srcName = props.sourceName;
+    } else {
+      srcName = props.name;
+    }
 
-		if(props.sourceName) {
-			srcName = props.sourceName;
-		}
-		else {
-			srcName = props.name;
-		}
+    link = (
+      <a
+        href={props.source}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={"External link to " + srcName}
+      >
+        <Link />
+      </a>
+    );
+  }
 
-		link = <a href={props.source} target="_blank" rel="noopener noreferrer" title={"External link to "+srcName}><Link /></a>
-	}
+  // if this is hideable
+  // if(props.hideable) {
+  // 	trigger = <button className="button" onClick={() => props.toggle()}>Hide</button>
+  // }
 
-	// if this is hideable
-	// if(props.hideable) {
-	// 	trigger = <button className="button" onClick={() => props.toggle()}>Hide</button>
-	// }
+  return (
+    <div className="section">
+      <div className="section-label">
+        {props.name}
+        {link}
+      </div>
 
-	return (
-		<div className="section">
-		
-			<div className="section-label">
-				{props.name}
-				{link}
-			</div>
-
-			<div className="section-content">{props.children}</div>
-			
-		</div>
-	);
+      <div className="section-content">{props.children}</div>
+    </div>
+  );
 }
