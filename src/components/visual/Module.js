@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
 
-// images 
-import { ReactComponent as Grid } from '../../images/grid.svg';
+// images
+import Grid from "../../images/grid.svg?react";
 
 // drag n drop
-import { Draggable } from 'react-beautiful-dnd';
+import { Draggable } from "react-beautiful-dnd";
 
-export class Module extends React.Component
-{
-
-	render() {
-		
-		/*
+export class Module extends React.Component {
+  render() {
+    /*
 		// handling collapse while reorder
 		const handleMouseDown = () => {
 	      var content = document.getElementsByClassName('collapsable_content');
@@ -28,26 +25,31 @@ export class Module extends React.Component
       }}
       */
 
-		return (
-			<Draggable draggableId={this.props.module.id} index={this.props.index}>
-				{(provided, snapshot) => (
-					<div className="module"
-						ref={provided.innerRef}
-						{...provided.draggableProps}
-					>
-						<div className="label module_label" title="Move module" 
-							{...provided.dragHandleProps}>
-							<h2>{this.props.module.name}</h2>
-							<div className="mover"><Grid /></div>
-						</div>
+    return (
+      <Draggable draggableId={this.props.module.id} index={this.props.index}>
+        {(provided, snapshot) => (
+          <div
+            className="module"
+            ref={provided.innerRef}
+            {...provided.draggableProps}
+          >
+            <div
+              className="label module_label"
+              title="Move module"
+              {...provided.dragHandleProps}
+            >
+              <h2>{this.props.module.name}</h2>
+              <div className="mover">
+                <Grid />
+              </div>
+            </div>
 
-						<div className="divider"></div>
+            <div className="divider"></div>
 
-						{this.props.module.content}
-
-					</div>
-				)}
-			</Draggable>
-		);
-	}
+            {this.props.module.content}
+          </div>
+        )}
+      </Draggable>
+    );
+  }
 }
