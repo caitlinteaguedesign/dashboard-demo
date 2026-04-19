@@ -1,47 +1,45 @@
 // ===========================
 // MODULE
 .module {
-	// width: 16.25em;
-	border: 1px solid;
-	box-shadow: 0 1px 8px 0 rgba(0,0,0,.5);
+  // width: 16.25em;
+  border: 1px solid;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.5);
 
-	margin-bottom: 1.75em;
+  margin-bottom: 1.75em;
 
-	.label {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: .675em .75em;
+  .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.675em 0.75em;
 
-		.mover {
-			width: 0.5em;
-			height: 0.5em;
-			cursor: grab;
+    .mover {
+      cursor: grab;
 
-			svg {
-				display: block;
-			}
-		}
-	}
+      svg {
+        display: block;
+      }
+    }
+  }
 
-	.divider {
-		margin: 0 .75em .75em;
-	}
+  .divider {
+    margin: 0 0.75em 0.75em;
+  }
 
-	.content {
-		margin: 0 .75em 1em;
+  .content {
+    margin: 0 0.75em 1em;
 
-		&.hidden {
-			display: none;
-		}
-	}
+    &.hidden {
+      display: none;
+    }
+  }
 
-	.timestamp {
-		padding: .5em .75em;
+  .timestamp {
+    padding: 0.5em 0.75em;
 
-		p {
-			font-size: .75em;
-			text-align: right;
-		}
-	}
+    p {
+      font-size: 0.75em;
+      text-align: right;
+    }
+  }
 }
