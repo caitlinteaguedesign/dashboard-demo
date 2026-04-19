@@ -12,8 +12,9 @@
 
 // themes
 @use "themes/default";
-// @use "themes/mountains";
-// @use "themes/evening-sky";
+@use "themes/mountains";
+@use "themes/evening-sky";
+@use "themes/basis";
 
 // components
 @use "components/index" as components;

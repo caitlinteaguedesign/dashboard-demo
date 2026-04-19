@@ -1,38 +1,37 @@
-@use "basis" with (
-  $theme-name: "mountains",
-  $positive: #c2e78a,
-  $negative: #f1857d,
-  $link: #ffefdb,
-  $link-hover: #e2d1ba,
-  $key-text: #fff6ea,
-  $support-text: #be84a2,
-  $background: url("../images/wallpaper/jan-kronies-unsplash.jpg") center/cover
-    no-repeat #333333,
-  $h1: #ffe9ca,
-  $h2: #a7929c,
-  $p: #af849a,
-  $button-bg: linear-gradient(
+.mountains {
+  --positive: #c2e78a;
+  --negative: #f1857d;
+  --link: #ffefdb;
+  --link-hover: #e2d1ba;
+  --key-text: #fff6ea;
+  --support-text: #be84a2;
+  --background: url("../images/wallpaper/jan-kronies-unsplash.jpg") center/cover
+    no-repeat #333333;
+  --h1: #ffe9ca;
+  --h2: #a7929c;
+  --p: #af849a;
+  --button-bg: linear-gradient(
       to bottom,
       #fff1dc,
       #ffe9ca 15%,
       #ffe9ca 75%,
       #ddbb8b
     )
-    #ffe9ca,
-  $button-color: #5f431b,
-  $button-border: #ac854e,
-  $module-bg: #31272c,
-  $module-border: #1f161a,
-  $subtle-icon: #5a4d54,
-  $divider-bg: #1f171b,
-  $divider-border: #4b3f45,
-  $modal-backdrop: rgba(14, 12, 15, 0.9),
-  $action-fill: #fff6ea,
-  $action-border: #3b2830,
-  $action-bg: linear-gradient(to bottom, #883858, #5c1e43) #772d59,
-  $dragging-color: rgba(247, 214, 142, 0.2),
-  $barchart-header-color: #f8e5f7,
-  $barchart-body-bg: linear-gradient(
+    #ffe9ca;
+  --button-color: #5f431b;
+  --button-border: #ac854e;
+  --module-bg: #31272c;
+  --module-border: #1f161a;
+  --subtle-icon: #5a4d54;
+  --divider-bg: #1f171b;
+  --divider-border: #4b3f45;
+  --modal-backdrop: rgba(14, 12, 15, 0.9);
+  --action-fill: #fff6ea;
+  --action-border: #3b2830;
+  --action-bg: linear-gradient(to bottom, #883858, #5c1e43) #772d59;
+  --dragging-color: rgba(247, 214, 142, 0.2);
+  --barchart-header-color: #f8e5f7;
+  --barchart-body-bg: linear-gradient(
       to top,
       #807385,
       #594c5e 40px,
@@ -41,12 +40,12 @@
       #504455 92%,
       #3b2d3f
     )
-    #46434a,
-  $barchart-bar-border: #615220,
-  $barchart-bar-bg: #dbd177,
-  $barchart-value-color: #4b3e19,
-  $barchart-value-bg: #ffe7b4,
-  $barchart-element-bg: linear-gradient(
+    #46434a;
+  --barchart-bar-border: #615220;
+  --barchart-bar-bg: #dbd177;
+  --barchart-value-color: #4b3e19;
+  --barchart-value-bg: #ffe7b4;
+  --barchart-element-bg: linear-gradient(
       to top,
       #bda453,
       #dbbb77 23px,
@@ -54,5 +53,5 @@
       #dbbb77 24px,
       #ffe7b4
     )
-    #dbbb77
-);
+    #dbbb77;
+}
