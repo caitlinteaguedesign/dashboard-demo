@@ -1,9 +1,11 @@
+@use "../type";
+
 .bar-chart {
   width: 100%;
   margin-bottom: 1em;
 
   .chart-header {
-    font-family: $quicksand;
+    font-family: type.$quicksand;
     font-size: 0.8em;
     font-weight: 700;
     line-height: 1em;

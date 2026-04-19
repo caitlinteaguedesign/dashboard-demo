@@ -1,3 +1,5 @@
+@use "../mixins/gradients";
+
 .collapsable_parent {
 	margin-top: .5em;
 }
@@ -20,7 +22,7 @@
 	border: none;
 	border-top: 1px solid rgba(255,255,255,.1);
 	border-bottom: 1px solid rgba(0,0,0,.6);
-	@include gradients(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.2), rgba(0,0,0,.4));
+	@include gradients.gradients(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.2), rgba(0,0,0,.4));
 	color: rgba(255,255,255,.4);
 	font-size: .8em;
 	line-height: 1.5em;

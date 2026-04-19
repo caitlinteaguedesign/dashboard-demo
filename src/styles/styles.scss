@@ -2,31 +2,31 @@
 // PROJECT BUILDER
 
 // css reset
-@import "reset";
+@use "reset";
 
 // mixins
-@import "mixins/index";
+@use "mixins/index" as mixins;
 
 // typography
-@import "type";
+@use "type";
 
 // themes
-@import "themes/default";
-@import "themes/mountains";
-@import "themes/evening-sky";
+@use "themes/default";
+// @use "themes/mountains";
+// @use "themes/evening-sky";
 
 // components
-@import "components/index";
+@use "components/index" as components;
 
 // layout
-@import "layout/body";
-@import "layout/column";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/module";
-@import "layout/section";
+@use "layout/body";
+@use "layout/column";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/module";
+@use "layout/section";
 
 // sections
-@import "sections/ips-high-pageload";
-@import "sections/orders-by-source";
-@import "sections/settings-modal";
+@use "sections/ips-high-pageload";
+@use "sections/orders-by-source";
+@use "sections/settings-modal";
