@@ -1,8 +1,5 @@
 {
-  "name": "dashboard-demo",
-  "version": "1.0.0",
   "private": true,
-  "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,10 +13,10 @@
     "moment": "^2.24.0",
     "node-schedule": "^2.1.1",
     "ping.js": "^0.3.0",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-beautiful-dnd": "^13.1.1",
-    "react-dom": "^18.2.0",
-    "universal-cookie": "^4.0.3"
+    "react-dom": "^18.3.1",
+    "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.7.0",
