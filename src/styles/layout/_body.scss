@@ -1,6 +1,8 @@
+@use "../type";
+
 html,
 body {
-  font-family: $quicksand;
+  font-family: type.$quicksand;
 }
 
 .container {
