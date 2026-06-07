@@ -22,9 +22,7 @@ export default class Modal extends React.Component {
         className="modal-wrapper"
         style={{
           transform: visibility ? "translateY(0vh)" : "translateY(-100vh)",
-          transition: visibility
-            ? "transform 0.2s ease"
-            : "transform 0.2s ease 0.2s",
+          transitionDelay: visibility ? "0s" : "450ms",
         }}
       >
         <div
@@ -32,9 +30,7 @@ export default class Modal extends React.Component {
           onClick={(e) => this.props.toggleModal(e)}
           style={{
             opacity: visibility ? "1" : "0",
-            transition: visibility
-              ? "opacity 0.2s ease 0.2s"
-              : "opacity 0.2s ease",
+            transitionDelay: visibility ? "250ms" : "0s",
           }}
         ></div>
 

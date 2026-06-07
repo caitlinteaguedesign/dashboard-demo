@@ -1,78 +1,90 @@
 .modal-wrapper {
-	z-index: 1000;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow-x: hidden;
-   overflow-y: auto;
+  z-index: 1000;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
 
-	.backdrop {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-	}
-	.modal {
-		transition: transform 0.2s ease;
-		position: relative;
-		margin: 2em;
-		width: 100%;
-		max-width: 26em;
-		border: 1px solid;
-		
-		box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
+  .backdrop {
+    transition: opacity 200ms ease;
+    position: absolute;
+    inset: 0;
+  }
+  .modal {
+    transition: transform 450ms;
+    transition-timing-function: linear(
+      0,
+      -0.005 9.4%,
+      -0.037 22.7%,
+      -0.041 27.3%,
+      -0.023 32.6%,
+      0.025 37%,
+      0.112 41.2%,
+      0.239 45%,
+      0.666 52.9%,
+      0.821 56.6%,
+      0.936 60.8%,
+      1.008 65.6%,
+      1.034 69.4%,
+      1.041 73.9%,
+      1.006 90.3%,
+      1
+    );
+    position: relative;
+    margin: 2em;
+    width: 100%;
+    max-width: 26em;
+    border: 1px solid;
 
-		.modal-header {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.75);
 
-			h2 {
-				padding: .75em 0 .5em .75em;
-			}
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-			.modal-closer {
-				margin-right: .25em;
-				width: 2em;
-				height: 2em;
-				padding: .5em;
-				cursor: pointer;
-				
-				svg {
-					display: block;
-					width: 1em;
-					height: 1em;
-				}
-			}
-		}
+      h2 {
+        padding: 0.75em 0 0.5em 0.75em;
+      }
 
-		.modal-content {
-			padding: 0 .75em .75em;
+      .modal-closer {
+        margin-right: 0.25em;
+        width: 2em;
+        height: 2em;
+        padding: 0.5em;
+        cursor: pointer;
 
-			display: flex;
+        svg {
+          display: block;
+          width: 1em;
+          height: 1em;
+        }
+      }
+    }
 
-			@media screen and (max-width: 450px) {
-				display: block;
-			}
+    .modal-content {
+      padding: 0 0.75em 0.75em;
 
-			.section {
+      display: flex;
 
-				&:not(:last-child){
-					margin-bottom: 0;
-					margin-right: 2em;
+      @media screen and (max-width: 450px) {
+        display: block;
+      }
 
-					@media screen and (max-width: 450px) {
-						margin-bottom: 1.5em;
-						margin-right: 0;
-					}
-				}
-			}
-		}
-	}
+      .section {
+        &:not(:last-child) {
+          margin-bottom: 0;
+          margin-right: 2em;
+
+          @media screen and (max-width: 450px) {
+            margin-bottom: 1.5em;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
