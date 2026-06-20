@@ -1,12 +1,12 @@
 import React from "react";
 
 // constants
-import * as Constants from "./data/constants";
+import * as Constants from "../data/constants";
 
 // visual components
-import { Section } from "./visual/Section";
-import { TimeStamp } from "./visual/TimeStamp";
-import { ValueChecker } from "./visual/ValueChecker";
+import { Section } from "../visual/Section";
+import { TimeStamp } from "../visual/TimeStamp";
+import { ValueChecker } from "../visual/ValueChecker";
 
 export class OrderActivity extends React.Component {
   // some things to prevent memory leak

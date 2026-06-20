@@ -1,13 +1,13 @@
 import React from "react";
 
 // constants
-import * as Constants from "./data/constants";
+import * as Constants from "../data/constants";
 
 // visual components
-import { TimeStamp } from "./visual/TimeStamp";
+import { TimeStamp } from "../visual/TimeStamp";
 
-// logic components
-import { formatDollars } from "./util/formatDollars";
+// util
+import { formatDollars } from "../util/formatDollars";
 
 export class OrdersBySource extends React.Component {
   // some things to prevent memory leak

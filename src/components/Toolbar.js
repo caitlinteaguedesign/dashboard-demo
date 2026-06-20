@@ -17,7 +17,7 @@ import { Column } from "./visual/Column";
 import { Footer } from "./visual/Footer";
 
 // app settings
-import { Settings } from "./Settings";
+import { Settings } from "./modules/Settings";
 import { setModules } from "./util/setModules";
 
 // -----------------------------------------------------------------
