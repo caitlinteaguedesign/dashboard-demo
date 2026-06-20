@@ -1,8 +1,8 @@
 import React from "react";
 
 // images
-import Gear from "../../images/gear.svg?react";
-import Save from "../../images/save.svg?react";
+import Gear from "../images/gear.svg?react";
+import Save from "../images/save.svg?react";
 
 export function Header(props) {
   const btnTitle = props.minimized

@@ -1,7 +1,7 @@
 import React from "react";
 
 // images
-import Grid from "../../images/grid.svg?react";
+import Grid from "../images/grid.svg?react";
 
 // drag n drop
 import { Draggable } from "react-beautiful-dnd";

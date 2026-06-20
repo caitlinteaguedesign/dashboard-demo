@@ -2,7 +2,7 @@
 import React from "react";
 
 // images
-import ExMark from "../../images/exmark.svg?react";
+import ExMark from "../images/exmark.svg?react";
 
 // class
 export default class Modal extends React.Component {

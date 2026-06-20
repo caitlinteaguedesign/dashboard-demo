@@ -4,10 +4,10 @@ import React from "react";
 // import * as Constants from './data/constants';
 
 // visual components
-import { Section } from "../visual/Section";
-import { TimeStamp } from "../visual/TimeStamp";
-import { ValueChecker } from "../visual/ValueChecker";
-import { BarChart } from "../visual/BarChart";
+import { Section } from "../components/Section";
+import { TimeStamp } from "../components/TimeStamp";
+import { ValueChecker } from "../components/ValueChecker";
+import { BarChart } from "../components/BarChart";
 
 // helper classes
 import LineGraph from "../helpers/LineGraph";

@@ -4,7 +4,7 @@ import React from "react";
 import * as Constants from "../data/constants";
 
 // visual components
-import { TimeStamp } from "../visual/TimeStamp";
+import { TimeStamp } from "../components/TimeStamp";
 
 // util
 import { formatDollars } from "../util/formatDollars";

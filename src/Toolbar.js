@@ -12,9 +12,9 @@ import DragDrop from "./helpers/DragDrop";
 import Cookies from "universal-cookie";
 
 // visual components
-import { Header } from "./visual/Header";
-import { Column } from "./visual/Column";
-import { Footer } from "./visual/Footer";
+import { Header } from "./components/Header";
+import { Column } from "./components/Column";
+import { Footer } from "./components/Footer";
 
 // app settings
 import { Settings } from "./modules/Settings";
