@@ -1,16 +1,16 @@
 import React from "react";
 
 // constants
-import * as Constants from "./data/constants";
+import * as Constants from "../data/constants";
 
 // visual components
-import { Section } from "./visual/Section";
-import { TimeStamp } from "./visual/TimeStamp";
-import { ValueChecker } from "./visual/ValueChecker";
+import { Section } from "../visual/Section";
+import { TimeStamp } from "../visual/TimeStamp";
+import { ValueChecker } from "../visual/ValueChecker";
 
-// logic components
-import { formatDollars } from "./util/formatDollars";
-import { setTruncate } from "./util/setTruncate";
+// util
+import { formatDollars } from "../util/formatDollars";
+import { setTruncate } from "../util/setTruncate";
 
 export class Newsletter extends React.Component {
   // some things to prevent memory leak

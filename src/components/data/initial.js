@@ -1,13 +1,13 @@
 import React from "react";
 
 // modules
-import { OrderActivity } from "../OrderActivity";
-import { Shipping } from "../Shipping";
-import { Traffic } from "../Traffic";
-import { Newsletter } from "../Newsletter";
-import { OrdersBySource } from "../OrdersBySource";
-import { ServerMonitor } from "../ServerMonitor";
-import { HighestPageLoadIps } from "../HighestPageLoadIps";
+import { HighestPageLoadIps } from "../modules/HighestPageLoadIps";
+import { Newsletter } from "../modules/Newsletter";
+import { OrderActivity } from "../modules/OrderActivity";
+import { OrdersBySource } from "../modules/OrdersBySource";
+import { ServerMonitor } from "../modules/ServerMonitor";
+import { Shipping } from "../modules/Shipping";
+import { Traffic } from "../modules/Traffic";
 
 // the data
 const initialData = {

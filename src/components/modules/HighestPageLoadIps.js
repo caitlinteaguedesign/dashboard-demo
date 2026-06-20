@@ -1,20 +1,20 @@
 import React from "react";
 
 // constants
-import * as Constants from "./data/constants";
+import * as Constants from "../data/constants";
 
 // visual components
-import { Section } from "./visual/Section";
-import { TimeStamp } from "./visual/TimeStamp";
-import { ValueChecker } from "./visual/ValueChecker";
+import { Section } from "../visual/Section";
+import { TimeStamp } from "../visual/TimeStamp";
+import { ValueChecker } from "../visual/ValueChecker";
 
 // images
-import Link from "../images/link.svg?react";
-import Check from "../images/check.svg?react";
-import Alert from "../images/alert.svg?react";
+import Link from "../../images/link.svg?react";
+import Check from "../../images/check.svg?react";
+import Alert from "../../images/alert.svg?react";
 
-// logic
-import { checkIP } from "./util/checkIP";
+// util
+import { checkIP } from "../util/checkIP";
 
 export class HighestPageLoadIps extends React.Component {
   // some things to prevent memory leak

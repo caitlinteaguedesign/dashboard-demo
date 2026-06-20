@@ -4,17 +4,17 @@ import React from "react";
 // import * as Constants from './data/constants';
 
 // visual components
-import { Section } from "./visual/Section";
-import { TimeStamp } from "./visual/TimeStamp";
-import { ValueChecker } from "./visual/ValueChecker";
-import { BarChart } from "./visual/BarChart";
+import { Section } from "../visual/Section";
+import { TimeStamp } from "../visual/TimeStamp";
+import { ValueChecker } from "../visual/ValueChecker";
+import { BarChart } from "../visual/BarChart";
 
 // helper classes
-import LineGraph from "./helpers/LineGraph";
-import Collapsable from "./helpers/Collapsable";
+import LineGraph from "../helpers/LineGraph";
+import Collapsable from "../helpers/Collapsable";
 
-// logic components
-import { getRandomInt } from "./util/getRandomInt";
+// util
+import { getRandomInt } from "../util/getRandomInt";
 
 export class ServerMonitor extends React.Component {
   // some things to prevent memory leak
