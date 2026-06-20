@@ -21,8 +21,8 @@ import { Settings } from "./modules/Settings";
 import { setModules } from "./util/setModules";
 
 // -----------------------------------------------------------------
-// the toolbar
-export class Toolbar extends React.Component {
+// the dashboard
+export class Dashboard extends React.Component {
   // -----------------------------------------------------------------
   // initial data
 
