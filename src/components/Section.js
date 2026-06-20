@@ -1,7 +1,7 @@
 import React from "react";
 
 // images
-import Link from "../../images/link.svg?react";
+import Link from "../images/link.svg?react";
 
 export function Section(props) {
   var link = "";

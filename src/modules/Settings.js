@@ -1,7 +1,7 @@
 import React from "react";
 
 // visual components
-import { Section } from "../visual/Section";
+import { Section } from "../components/Section";
 
 export function Settings(props) {
   // for getting the theme list

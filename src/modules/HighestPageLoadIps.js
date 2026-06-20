@@ -4,14 +4,14 @@ import React from "react";
 import * as Constants from "../data/constants";
 
 // visual components
-import { Section } from "../visual/Section";
-import { TimeStamp } from "../visual/TimeStamp";
-import { ValueChecker } from "../visual/ValueChecker";
+import { Section } from "../components/Section";
+import { TimeStamp } from "../components/TimeStamp";
+import { ValueChecker } from "../components/ValueChecker";
 
 // images
-import Link from "../../images/link.svg?react";
-import Check from "../../images/check.svg?react";
-import Alert from "../../images/alert.svg?react";
+import Link from "../images/link.svg?react";
+import Check from "../images/check.svg?react";
+import Alert from "../images/alert.svg?react";
 
 // util
 import { checkIP } from "../util/checkIP";

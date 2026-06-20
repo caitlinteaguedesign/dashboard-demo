@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 
 // the app
-import { Toolbar } from "./components/Toolbar";
+import { Toolbar } from "./Toolbar";
 
 // styles
 import "./styles/styles.scss";

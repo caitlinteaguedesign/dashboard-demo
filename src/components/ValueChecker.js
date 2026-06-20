@@ -1,7 +1,7 @@
 import React from "react";
 
 // images
-import Alert from "../../images/alert.svg?react";
+import Alert from "../images/alert.svg?react";
 
 export function ValueChecker(props) {
   let statement;
