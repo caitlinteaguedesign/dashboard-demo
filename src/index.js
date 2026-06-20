@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 
 // the app
-import { Toolbar } from "./Toolbar";
+import { Dashboard } from "./Dashboard";
 
 // styles
 import "./styles/styles.scss";
@@ -9,4 +9,4 @@ import "./styles/styles.scss";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-root.render(<Toolbar />);
+root.render(<Dashboard />);
