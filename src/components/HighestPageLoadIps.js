@@ -28,6 +28,7 @@ export class HighestPageLoadIps extends React.Component {
       datetime: new Date(),
       ips: [
         { address: "192.168.0.95", count: 2523 },
+        { address: "142.0.178.123", count: 1546 },
         { address: "192.168.0.256", count: 801 },
         { address: "192.168.0.54", count: 249 },
       ],
