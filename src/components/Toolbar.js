@@ -18,7 +18,7 @@ import { Footer } from "./visual/Footer";
 
 // app settings
 import { Settings } from "./Settings";
-import { setModules } from "./logic/setModules";
+import { setModules } from "./util/setModules";
 
 // -----------------------------------------------------------------
 // the toolbar

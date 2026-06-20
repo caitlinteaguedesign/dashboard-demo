@@ -14,7 +14,7 @@ import Check from "../images/check.svg?react";
 import Alert from "../images/alert.svg?react";
 
 // logic
-import { checkIP } from "./logic/checkIP";
+import { checkIP } from "./util/checkIP";
 
 export class HighestPageLoadIps extends React.Component {
   // some things to prevent memory leak

@@ -14,7 +14,7 @@ import LineGraph from "./helpers/LineGraph";
 import Collapsable from "./helpers/Collapsable";
 
 // logic components
-import { getRandomInt } from "./logic/getRandomInt";
+import { getRandomInt } from "./util/getRandomInt";
 
 export class ServerMonitor extends React.Component {
   // some things to prevent memory leak

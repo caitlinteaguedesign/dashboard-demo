@@ -7,7 +7,7 @@ import * as Constants from "./data/constants";
 import { TimeStamp } from "./visual/TimeStamp";
 
 // logic components
-import { formatDollars } from "./logic/formatDollars";
+import { formatDollars } from "./util/formatDollars";
 
 export class OrdersBySource extends React.Component {
   // some things to prevent memory leak
